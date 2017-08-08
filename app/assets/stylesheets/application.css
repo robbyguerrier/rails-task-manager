@@ -13,3 +13,74 @@
  *= require_tree .
  *= require_self
  */
+.design-form {
+  width: 700px;
+}
+.btn-margin {
+  margin-top : 10px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 25px;
+  color: #EB4A5F;
+}
+.box-shadow {
+  border: 1px solid rgba(0,0,0, 0.3);
+  border-radius: 4px;
+  box-shadow: 1px 3px 3px rgba(0,0,0, 0.2);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-primary.btn-large.btn-block {
+
+  margin-bottom: 10px;
+}
+
+a {
+text-decoration: none;
+color: red;
+}
+
+
+
+
+/* --- Fonts & colors --- */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+body {
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+}
+h1, h2, h3 {
+  font-family: "Montserrat", "sans-serif";
+}
+
+$start-color: #F4F4F4;
+$end-color: #1abc9c;
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+.banner h1 {
+  font-size: 35px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.banner p {
+  font-size: 20px;
+  opacity: 0.5;
+  font-weight: lighter;
+}
+
+$horizontal-offset: 0.5; // between -1 and 1
+.banner.horizontal-arrow {
+  background-image: linear-gradient(-225deg, transparent 50% * (1 + $horizontal-offset), $end-color 50% * (1 + $horizontal-offset)), linear-gradient(225deg, $end-color 50% * (1 - $horizontal-offset), $start-color 50% * (1 - $horizontal-offset));
+}
+
+$vertical-offset: 0.3; // between -1 and 1
+.banner.vertical-arrow {
+   background-image: linear-gradient(-145deg, transparent 50% * ( 1 + $vertical-offset), $end-color 50% * (1 + $vertical-offset)), linear-gradient(325deg, $end-color 50% * (1 - $vertical-offset), $start-color 50% * (1 - $vertical-offset));
+}

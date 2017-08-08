@@ -1,0 +1,11 @@
+
+
+<%= form_for task, class: "form-group" do |t| %>
+  <%= t.label :name %>
+  <%= t.text_field :name, class: "form-control" %>
+  <%= t.label :details %>
+  <%= t.text_field :details, class: "form-control" %>
+  <div class="text-center btn-margin">
+    <%= t.submit 'create', class: "btn btn-primary btn-large btn-block" %>
+  </div>
+<% end %>
